@@ -10,7 +10,7 @@ st.set_page_config(page_title="Chat with the Streamlit docs, powered by LlamaInd
 # openai.api_key = st.secrets.openai_key
 
 ## hide
-openai.api_key = st.secrets["OPENAPI_KEY"]
+openai.api_key = st.secrets["openapi_key"]
 ##
 
 st.title("Chat with the Streamlit docs, powered by LlamaIndex 💬🦙")
