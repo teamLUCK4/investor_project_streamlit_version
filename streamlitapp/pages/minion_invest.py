@@ -8,10 +8,11 @@ import time
 import os
 
 ##hide
-cloud_id = os.environ.get("ELASTIC_CLOUD_ID")
-username = os.environ.get("ELASTIC_USER_NAME")
-password = os.environ.get("ELASTIC_PASSWORD")
-endpointurl= os.environ.get("LAMBDA_ENDPOINT_URL")
+
+cloud_id = st.secrets["ELASTIC_CLOUD_ID"]
+username =  st.secrets["ELASTIC_USER_NAME"]
+password = st.secrets["ELASTIC_PASSWORD"]
+endpointurl=  st.secrets["LAMBDA_ENDPOINT_URL"]
 ## 
 
 st.title("📒 SEARCH Investor Tendency")
